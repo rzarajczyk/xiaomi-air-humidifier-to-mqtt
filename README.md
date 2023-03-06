@@ -23,7 +23,7 @@ mqtt:
   password: <passqord>
 
 xiaomi-air-humidifier:
-  id: xiaomi-air-purifier   # how will the device be identified in MQTT  
+  id: xiaomi-air-humidifier   # how will the device be identified in MQTT  
   ip: <device IP>
   token: <device token>
   fetch-interval-seconds: 5  # how often should the Monitor be pulled
