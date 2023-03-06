@@ -2,7 +2,7 @@ import logging
 
 from homie_helpers import Homie, FloatProperty, EnumProperty, IntProperty, Node, State
 from miio import AirHumidifierMiot, DeviceException
-from miio.airhumidifier_miot import OperationMode
+from miio.integrations.humidifier.zhimi.airhumidifier_miot import OperationMode
 
 
 class XiaomiAirHumidifier:

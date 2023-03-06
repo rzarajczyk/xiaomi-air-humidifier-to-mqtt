@@ -10,6 +10,6 @@ scheduler = BlockingScheduler(timezone=timezone)
 
 device = XiaomiAirHumidifier(config=config['xiaomi-air-humidifier'], mqtt_settings=MqttSettings.from_dict(config['mqtt']))
 
-scheduler.add_job(device.refresh, 'interval', seconds=config['fetch-interval-seconds'])
+scheduler.add_job(device.refresh, 'interval', seconds=config['xiaomi-air-humidifier']['fetch-interval-seconds'])
 
 scheduler.start()
